@@ -11,7 +11,7 @@ class User(Person):
 
     def give_book(self, book: Book):
 
-        if len(self.books) < User.__Max_book_count and not self.is_user_got_book_within_30_days(book.name):
+        if len(self.books) < User.__Max_book_count and not self.__is_user_got_book_within_30_days(book.name):
 
             self.books.append(book)
 
@@ -19,7 +19,7 @@ class User(Person):
 
         return False
 
-    def is_user_got_book_within_30_days(self, bookName: str):
+    def __is_user_got_book_within_30_days(self, bookName: str):
 
         currentBook = self.borrowed_books_history(bookName)
 
@@ -27,7 +27,9 @@ class User(Person):
              return False
 
         return True
-
+    
+    def __hai__():
+        print('ahi')
 
 
 

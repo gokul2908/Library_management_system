@@ -1,11 +1,12 @@
+from person.User import User
 from person.Person import Person
 
 
 class Library:
     def __init__(self) -> None:
-        self.Books = []
         self.Person = []
         self.Librarin = []
+        self.Stocks = {'science': }
 
     def printConsole(self):
         print('''
@@ -15,8 +16,8 @@ class Library:
 
 
 tmp = Library()
-ano = Person('kesav', 343, '''This is my address
+ano = User('kesav', 343, '''This is my address
          will get added''', sex='Male' )
+# ano.give_book()
 
 print(ano)
-
