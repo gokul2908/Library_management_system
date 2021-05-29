@@ -6,4 +6,4 @@ class Person:
         self.sex = sex
     
     def __str__(self) -> str:
-        return f'name is: {self.name} \nAge is {self.age}  \nAddress: {self.address} \ngender:{self.sex}'
+        return f'name is: {self.name} \nAge is {self.age} \nAddress: {self.address} \ngender:{self.sex}'
